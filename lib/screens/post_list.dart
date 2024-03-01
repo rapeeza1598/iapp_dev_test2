@@ -48,7 +48,7 @@ class _PostListState extends State<PostList> {
                                   (Random().nextInt(1000000) * 0xFFFFFF)
                                       .toInt())
                               .withOpacity(1.0),
-                          child: Text(state.posts[index].id.toString()),
+                          child: Text(state.posts[index].title[0].toUpperCase()),
                         ),
                         title: Text(state.posts[index].title,
                             style: const TextStyle(color: Colors.white)),
